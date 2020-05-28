@@ -27,6 +27,7 @@ export default (appInfo: EggAppInfo) => {
     url: 'mongodb://feiJasCy:JasCy!j2n@140.143.62.177:27018',
     options: {
       useNewUrlParser: true,
+      useUnifiedTopology: true,
       connectTimeoutMS: 30000,
       poolSize: 10,
       autoReconnect: true,
