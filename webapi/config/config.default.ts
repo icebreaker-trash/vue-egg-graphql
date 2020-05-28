@@ -11,13 +11,22 @@ export default (appInfo: EggAppInfo) => {
   config.middleware = [];
 
   // add your special config in here
-  const bizConfig = {
-    sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
+  // const bizConfig = {
+  //   sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
+  // };
+  config.jwt = {
+    secret: 'IcEbReAk-S9(N',
+    enable: true,
+  };
+  config.alinode = {
+    enable: true,
+    appid: '84894',
+    secret: 'd24de863198f467cc4a00f2ffb048ab129c01d19',
   };
 
   // the return config will combines to EggAppConfig
   return {
     ...config,
-    ...bizConfig,
+    // ...bizConfig,
   };
 };
