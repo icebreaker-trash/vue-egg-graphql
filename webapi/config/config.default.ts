@@ -22,6 +22,18 @@ export default (appInfo: EggAppInfo) => {
   config.passportJwt = {
     secret: 'ICeBrEakEr99',
   };
+  config.validate = {};
+  config.mongoose = {
+    url: 'mongodb://feiJasCy:JasCy!j2n@140.143.62.177:27018',
+    options: {
+      useNewUrlParser: true,
+      connectTimeoutMS: 30000,
+      poolSize: 10,
+      autoReconnect: true,
+      reconnectTries: 30,
+    },
+  };
+  config.graphql = {};
   // the return config will combines to EggAppConfig
   return {
     ...config,

@@ -13,7 +13,7 @@ logs/
 !.autod.conf.js
 .vs
 .github
-
+!typings
 
 
 app/**/*.js

@@ -14,9 +14,12 @@ import 'egg-schedule';
 import 'egg-static';
 import 'egg-jsonp';
 import 'egg-view';
+import 'egg-validate';
 import 'egg-passport';
 import 'egg-passport-jwt';
 import 'egg-alinode';
+import 'egg-mongoose';
+import 'egg-graphql';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
   interface EggPlugin {
@@ -32,8 +35,11 @@ declare module 'egg' {
     static?: EggPluginItem;
     jsonp?: EggPluginItem;
     view?: EggPluginItem;
+    validate?: EggPluginItem;
     passport?: EggPluginItem;
     passportJwt?: EggPluginItem;
     alinode?: EggPluginItem;
+    mongoose?: EggPluginItem;
+    graphql?: EggPluginItem;
   }
 }

@@ -6,6 +6,10 @@ const plugin: EggPlugin = {
   //   enable: true,
   //   package: 'egg-view-nunjucks',
   // },
+  validate: {
+    enable: true,
+    package: 'egg-validate',
+  },
   passport: {
     enable: true,
     package: 'egg-passport',
@@ -17,6 +21,14 @@ const plugin: EggPlugin = {
   alinode: {
     enable: true,
     package: 'egg-alinode',
+  },
+  mongoose: {
+    enable: true,
+    package: 'egg-mongoose',
+  },
+  graphql: {
+    enable: true,
+    package: 'egg-graphql',
   },
 };
 

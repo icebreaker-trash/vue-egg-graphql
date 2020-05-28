@@ -1,6 +1,13 @@
 import { Application } from 'egg';
 // import { Strategy as LocalStrategy } from 'passport-local';
 export default (app: Application) => {
+  app.validator.addRule('jsonString', (_rule, value) => {
+    try {
+      JSON.parse(value);
+    } catch (err) {
+      return 'must be json string';
+    }
+  });
 
   app.beforeStart(async () => {
     console.log('beforeStart');
@@ -21,7 +28,6 @@ export default (app: Application) => {
 
   // 处理用户信息
   // app.passport.verify(async (ctx, user) => {
-
 
   // });
   // app.passport.serializeUser(async (ctx, user) => { });
