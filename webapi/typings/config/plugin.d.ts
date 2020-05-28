@@ -14,7 +14,8 @@ import 'egg-schedule';
 import 'egg-static';
 import 'egg-jsonp';
 import 'egg-view';
-import 'egg-jwt';
+import 'egg-passport';
+import 'egg-passport-jwt';
 import 'egg-alinode';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
@@ -31,7 +32,8 @@ declare module 'egg' {
     static?: EggPluginItem;
     jsonp?: EggPluginItem;
     view?: EggPluginItem;
-    jwt?: EggPluginItem;
+    passport?: EggPluginItem;
+    passportJwt?: EggPluginItem;
     alinode?: EggPluginItem;
   }
 }

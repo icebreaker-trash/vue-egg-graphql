@@ -6,9 +6,13 @@ const plugin: EggPlugin = {
   //   enable: true,
   //   package: 'egg-view-nunjucks',
   // },
-  jwt: {
+  passport: {
     enable: true,
-    package: 'egg-jwt',
+    package: 'egg-passport',
+  },
+  passportJwt: {
+    enable: true,
+    package: 'egg-passport-jwt',
   },
   alinode: {
     enable: true,

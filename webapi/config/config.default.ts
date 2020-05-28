@@ -14,16 +14,14 @@ export default (appInfo: EggAppInfo) => {
   // const bizConfig = {
   //   sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
   // };
-  config.jwt = {
-    secret: 'IcEbReAk-S9(N',
-    enable: true,
-  };
   config.alinode = {
-    enable: true,
+    enable: false,
     appid: '84894',
     secret: 'd24de863198f467cc4a00f2ffb048ab129c01d19',
   };
-
+  config.passportJwt = {
+    secret: 'ICeBrEakEr99',
+  };
   // the return config will combines to EggAppConfig
   return {
     ...config,
